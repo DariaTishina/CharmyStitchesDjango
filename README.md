@@ -35,7 +35,7 @@ https://www.geeksforgeeks.org/clone-and-run-a-django-project-from-github/
 
 ![image](https://github.com/DariaTishina/CharmyStitchesDjango/assets/47531362/2ee3191d-8f80-4ca3-97ec-da9f3efa3308)
 
-Добавление фотогафии доступно только в панели администратора.
+Добавление фотографии доступно только в панели администратора.
 
 ![image](https://github.com/DariaTishina/CharmyStitchesDjango/assets/47531362/6723df40-5254-4dea-ba44-cb5f6fd3c95d)
 
