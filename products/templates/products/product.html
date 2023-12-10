@@ -1,0 +1,29 @@
+{% extends 'products/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/header_footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/product.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="product">
+        <div class="ProductText">Карточка товара</div>
+            <form method="post">
+                <div class="allplaceholders">
+                    {% csrf_token %}
+                    {{ form.name }}
+                    {{ form.color }}
+                    {{ form.material }}
+                    {{ form.size }}
+                    {{ form.description }}
+                    <br>{{ form.price }}
+                    <button type="submit" class="AddProduct">Добавить</button>
+                    <span>{{ error }}</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+{% endblock %}

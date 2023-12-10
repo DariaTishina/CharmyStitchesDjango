@@ -1,0 +1,146 @@
+.shop {
+    height: auto;
+    background-color: #E6DFCC;
+    background-image:  url(../svg/body/Клубки\ и\ ножницы2.svg);
+    background-repeat: round;
+    color: #5E3628;
+    text-align: justify;
+    line-height: 30px;
+    max-width: 1980px;
+    margin: auto;
+}
+
+#container {
+    display: flex;
+    text-align: center; 
+    font-size: 15px; 
+    line-height: 40px;
+}
+
+.product {
+    margin-left: 95px;
+    margin-top: 70px;
+    height: 250px;
+    width: 210px;
+    background-color: #98AEA6;
+    background-image: url(../svg/body/Вопрос.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 7px;
+    border-color: #527976;
+    border-style: solid;
+}
+
+#TextAndButton {
+    display: flex;
+}
+
+.ShopText {
+    padding-left: 44%;
+    font-size: 30px;
+    padding-top: 1%;
+}
+
+.Add {
+    margin-top: 3%;
+    margin-left: 65%;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #527976;
+    font-size: 19px;
+    border-radius: 30px;
+    color: #E6DFCC;
+    -webkit-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+    -moz-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+    box-shadow: -3px -3px 0px 1px #5E3628 inset;
+}
+
+.productcard {
+    color: #fcf8ed;
+    background-color: #98AEA6;
+    width: 300px;
+    height: auto;
+    border-radius: 7px;
+    border-color: #527976;
+    border-style: solid;
+    text-align: justify;
+    word-break: break-all;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.productname {
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.productdescription {
+    font-size: 14px;
+}
+
+.productimage {
+    padding-left: 18px;
+}
+
+.submitbutton{
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border: none;
+    background-color: #527976;
+    font-size: 19px;
+    border-radius: 10px;
+    color: #fcf8ed;
+}
+
+.submitbutton:hover {
+    color: #98AEA6;
+}
+
+.cards {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .product {
+        margin-left: 13px;
+        margin-top: 50px;
+        height: 170px;
+        width: 50px;
+        background-color: #98AEA6;
+        background-image: url(../svg/body/Вопрос.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border-radius: 7px;
+        border-color: #527976;
+        border-style: solid;
+    }
+    .ShopText {
+        font-size: 25px;
+        text-align: center;
+        padding-left: 10%;
+        padding-top: 4%;
+    }
+
+    #TextAndButton {
+        display: contents;
+    }
+
+    .Add {
+        margin-top: 10%;
+        margin-left: 28%;
+        width: 200px;
+        height: 50px;
+        border: none;
+        background-color: #527976;
+        font-size: 19px;
+        border-radius: 30px;
+        color: #E6DFCC;
+        -webkit-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+        -moz-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+        box-shadow: -3px -3px 0px 1px #5E3628 inset;
+    }
+}

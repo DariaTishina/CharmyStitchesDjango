@@ -1,0 +1,51 @@
+.about {
+    height: 758px;
+    background-color: #E6DFCC;
+    background-image:  url(../svg/body/Клубки\ и\ ножницы2.svg);
+    background-repeat: round;
+    color: #5E3628;
+    text-align: justify;
+    line-height: 30px;
+    max-width: 1980px;
+    margin: auto;
+}
+
+.AboutShop {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.text {
+    text-align: justify;
+    font-size: 19px;
+    padding: 1% 0% 0% 20%;
+    width: 80%;
+    line-height: 35px;
+}
+
+.heart {
+    padding-left: 20%;
+    padding-top: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+    .AboutShop {
+        font-size: 25px;
+        text-align: center;
+        padding-top: 4%;
+    }
+
+    .text {
+        text-align: justify;
+        font-size: 14px;
+        padding: 0% 0% 0% 10%;
+        width: 90%;
+        line-height: 20px;
+    }
+
+    .heart {
+        padding-left: 10%;
+    }
+    
+}

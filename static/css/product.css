@@ -1,0 +1,104 @@
+.product {
+    height: 758px;
+    background-color: #E6DFCC;
+    background-image: url(../svg/body/КорзинкаТележка.svg),url(../svg/body/Карточка.svg), url(../svg/body/Клубки\ и\ ножницы2.svg);
+    background-repeat: no-repeat, no-repeat, round;
+    background-position: 665px 10px, top, 0px;
+    background-size: auto, 1000px 800px, auto;
+    color: #5E3628;
+    text-align: justify;
+    line-height: 30px;
+    max-width: 1980px;
+    margin: auto;
+}
+
+.AddProduct {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #E6DFCC;
+    border-radius: 20px;
+    color: #5E3628;
+    -webkit-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+    -moz-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+    box-shadow: -1px -3px 0px 1px #5E3628 inset;
+    font-size: 18px;
+    margin-left: 2%;
+}
+
+.ProductText {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.placeholder {
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #E6DFCC;
+    padding-right: 10%;
+    width: 60%;
+}
+
+.allplaceholders {
+    padding-left: 28%;
+    padding-top: 4%;
+}
+
+.placeholdertext {
+    padding-top: 8px; 
+    font-size: 23px; 
+    color: #E6DFCC;
+}
+
+.price {
+    text-align: center;
+    border-radius: 15px; 
+    background-color: #E6DFCC;
+    width: 10%;
+    height: 9%;
+    margin-top: 3%;
+    margin-left: 115px;
+    height: 65px;
+    width: 180px;
+}
+
+.placeholdertextprice {
+    padding-top: 1%;
+    padding-left: 12%; 
+    font-size: 22px; 
+    color: #E6DFCC;
+}
+
+@media only screen and (max-width: 600px) {
+    .product {
+        background-image: url(../svg/body/Карточка.svg), url(../svg/body/Клубки\ и\ ножницы2.svg);
+        background-repeat: no-repeat, round;
+        background-position: -500px 9px, 0px;
+        background-size: 1000px 800px, auto;
+    }
+
+    .ProductText {
+        font-size: 25px;
+        padding-top: 4%;
+    }
+
+    .allplaceholders {
+        padding-left: 7%
+    }
+
+    .placeholder {
+        width: 90%; /* Растягиваем текстовые поля на всю ширину экрана */
+        margin-bottom: 10px; /* Добавляем отступ между полями */
+    }
+
+    .price {
+        width: 90%;
+        margin-left: 0; /* Убираем левый отступ */
+    }
+
+    .AddProduct {
+        margin-left: 27%;
+        margin-top: 3%;
+    }
+}

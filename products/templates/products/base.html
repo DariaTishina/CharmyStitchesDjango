@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Prata" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %} {% endblock %}
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="top">
+        <header>
+            <a target="_blank" href="https://vk.com/daria_silentium" class="headerbutton jumpbuttons">
+                <img src="{% static 'svg/header and nav/Вк.svg' %}" height="60px">
+            </a>
+            <a target="_blank" href="https://pin.it/swnjNBZ" class="headerbutton jumpbuttons">
+                <img src="{% static 'svg/header and nav/Пинтерест.svg' %}" height="60px">
+            </a>
+            <a target="_blank" href="https://discord.com/" class="headerbutton jumpbuttons">
+                <img src="{% static 'svg/header and nav/Дискорд.svg' %}" height="60px">
+            </a>
+            <a href="{% url 'index' %}" class="headerbutton jumpbuttons">
+                <img src="{% static 'svg/header and nav/Логотип.svg' %}" id="logosize">
+            </a>
+            <a href="authorization.html" class="headerbutton jumpbuttons">
+                <img src="{% static 'svg/header and nav/Вход.svg' %}" alt="" height="70px" width="138">
+            </a>
+    </header>
+    <nav>
+        <a href="about.html" class="navbutton jumpbuttons">
+            о нас
+        </a>
+        <a href="{% url 'shop' %}" class="navbutton jumpbuttons">
+            магазин
+        </a>
+        <a href="articles.html" class="navbutton jumpbuttons">
+            статьи
+        </a>
+        <a href="contacts.html" class="navbutton jumpbuttons">
+            контакты
+        </a>
+    </nav>
+    </div>
+    <div class="topmob">
+        <a href="{% url 'index' %}" class="headerbutton">
+            <img src="{% static 'svg/header and nav/Логотип.svg' %}" id="logosize">
+        </a>
+        <select name="buttonsmob" id="headerbuttonsmob" onchange="if (this.value) window.location.href = this.value">
+        <option value="{% url 'index' %}">Разделы</option>
+        <option value="about.html">О нас</option>
+        <option value="{% url 'shop' %}">Магазин</option>
+        <option value="articles.html">Статьи</option>
+        <option value="contacts.html">Контакты</option>
+        <option value="https://vk.com/daria_silentium">ВК</option>
+        <option value="https://pin.it/swnjNBZ">Пинтерест</option>
+        <option value="https://discord.com/">Дискорд</option>
+        <option value="authorization.html">Вход</option>
+        </select>
+    </div>
+
+    {% block content %} {% endblock %}
+
+    <footer>
+        <div id="footertext">
+            <div id="c2023">
+                ©2023
+            </div>
+            <div id="copy">
+                Копирование материалов без согласия автора запрещено
+            </div>
+            <div id="feedback">
+            — Оставьте отзыв и помогите нам стать лучше! —
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.articles {
+    height: 758px;
+    background-color: #E6DFCC;
+    background-image: url(../svg/body/Клубки\ и\ ножницы2.svg);
+    background-repeat: round;
+    background-position: 0px;
+    background-size: auto;
+    color: #5E3628;
+    text-align: justify;
+    line-height: 40px;
+    max-width: 1980px;
+    margin: auto;
+}

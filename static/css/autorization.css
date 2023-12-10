@@ -1,0 +1,52 @@
+.autorization {
+    height: 374px;
+    width: 568px;
+    background-color: #E6DFCC;
+    background-image: url(../svg/body/Декор\ авторизации.svg);
+    background-repeat: no-repeat;
+    color: #5E3628;
+    border: 4px double #5E3628;
+}
+
+.login {
+    padding-top: 23%;
+}
+
+.inputbutton {
+    border: 3px solid #5E3628; 
+    border-radius: 5px; 
+    background-color: #f5f2e9;
+    padding-right: 140px; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.password {
+    padding-top: 1%;
+}
+
+.style {
+    padding-left: 14%;
+    font-size: 20px;
+    color: #E6DFCC;
+}
+
+.logincancel {
+    font-size: 18px; 
+    padding-left: 10px; 
+    font-size: 20px; 
+    padding-left: 30%;
+}
+
+.logincancelbutton {
+    margin-left: 3%;
+    border: 3px solid #5E3628; 
+    border-radius: 7px; 
+    background-color: #f5f2e9; 
+    color: #5E3628;
+}
+
+.forgotpass {
+    text-align: center;
+    border: none; background: none; color: #5E3628; font-size: 20px;
+}

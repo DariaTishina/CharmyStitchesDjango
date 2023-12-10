@@ -1,0 +1,66 @@
+{% extends 'products/base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href= "{% static 'css/header_footer.css' %}">
+    <link rel="stylesheet" href= "{% static 'css/shop.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="shop">
+        <div id="TextAndButton">-->
+            <div class="ShopText">Ассортимент</div>
+            <a href="{% url 'product' %}"><button class="Add">Добавить</button></a>
+        </div>
+        <div class="cards">
+            <div class="row justify-content-center">
+                {% for product in productlist %}
+                    <div class="col-lg-2 col-md-6 mb-4">
+                         <div class="productcard">
+                             {% if product.image %}
+                                <img src="{{ product.image.url }}" class="productimage">
+                             {% else %}
+                                <p></p>
+                             {% endif %}
+                            <p class="productname">{{ product.name }}</p>
+                            <p class="productprice">{{ product.price }} руб.</p>
+                            <p class="productcolor">{{ product.color }}</p>
+                            <p class="productmaterial">{{ product.material }}</p>
+                            <p class="productsize">{{ product.size }}</p>
+                            <p class="productdiscription">{{ product.description }}</p>
+                            <p><button type="button" class="submitbutton">Отправить в корзину</button></p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+<!--    <div class="shop">-->
+<!--        <div id="TextAndButton">-->
+<!--            <div class="ShopText">Ассортимент</div>-->
+<!--            <a href="{% url 'product' %}"><button class="Add">Добавить</button></a>-->
+<!--        </div>-->
+<!--        <div id="container">-->
+<!--            <div class="product" onclick="redirectToProduct('product1')"><img src="{% static 'svg/product/БежевыйБелыйКрольчата.svg' %}" width="100%" height="100%">Зайчики-брелочки</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product2')"><img src="{% static 'svg/product/БежевыйКоричневыйМишка.svg' %}" width="100%" height="100%">Мишки с бантиками</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product3')"><img src="{% static 'svg/product/БежевыйНаборШапкаВарежки.svg' %}" width="100%" height="100%">Набор "Пудровый цветок"</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product4')"><img src="{% static 'svg/product/ГорчичныйСвитер.svg' %}" width="100%" height="100%">Свитер "Солнечный день"</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product5')"><img src="{% static 'svg/product/КрасныйСвитер.svg' %}" width="100%" height="100%">Свитер "Морозная роза"</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product6')"><img src="{% static 'svg/product/МишкиЖелтыйСинийШарфик.svg' %}" width="100%" height="100%">Мишки с шарфиками</div>-->
+<!--        </div>-->
+<!--        <div id="container">-->
+<!--            <div class="product" onclick="redirectToProduct('product7')"><img src="{% static 'svg/product/РозовыйНаборШапкаВарежкиШарфик.svg' %}" width="100%" height="100%">Набор "Сладкая вата"</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product8')"><img src="{% static 'svg/product/ТеплоКоричневыйШарфик.svg' %}" width="100%" height="100%">Шарф "Спелая малина"</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product9')"><img src="{% static 'svg/product/ЯркоПудровыйСвитер.svg' %}" width="100%" height="100%">Свитер "Антик"</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product10')">Товар10</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product11')">Товар11</div>-->
+<!--            <div class="product" onclick="redirectToProduct('product12')">Товар12</div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <script>-->
+<!--        function redirectToProduct(productName) {-->
+<!--          window.location.href = 'product.html?product=' + productName;-->
+<!--        }-->
+<!--      </script>-->

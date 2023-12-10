@@ -1,0 +1,141 @@
+* {
+    font-family: Prata;
+}
+
+.topmob {
+    display: none;
+}
+
+html,body{
+    overflow-x: clip;
+}
+
+header {
+    height: 97px;
+    background-image: url(../svg/Клубки\ и\ ножницы.svg);
+    background-color: #E6DFCC;
+    text-align: center;
+}
+
+nav {
+    height: 35px;
+    background-color: #527976;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navbutton {
+    padding: 0px 10px 0px 10px;
+    height: 28px;
+    background-color: #A1B190;
+    border:none;
+    -webkit-box-shadow: -22px -18px 0px 1px rgba(121, 133, 108, 1) inset;
+    -moz-box-shadow: -22px -18px 0px 1px rgba(121, 133, 108, 1) inset;
+    box-shadow: -2px -2px 0px 1px rgba(121, 133, 108, 1) inset;
+    border-radius: 7px; 
+    color: #E6DFCC;
+    text-shadow: 2px 2px 2px #00000044;
+    text-decoration: none;
+}
+
+.navbutton:hover {
+    color: #f0ece3;
+}
+
+.headerbutton {
+    border: none;
+    background: none;
+}
+
+.jumpbuttons {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounceIn;
+  animation-duration: 2s;
+}
+
+footer {
+    height: 50px;
+    background-color: #527976;
+    background-image: url(../svg/footer/Пунктир\ по\ ширине\ страницы.svg);
+    background-repeat:repeat-x;
+}
+
+#footertext {
+    display: flex;
+}
+
+#c2023 {
+    font-size: 22px; 
+    color: #A1B190;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#copy {
+    font-size: 15px;
+    width: 15%;
+    color: #A1B190;
+    padding-top: 4px;
+    padding-left: 1%;
+}
+
+#feedback {
+    font-size: 20px; 
+    color: #A1B190;
+    padding-left: 16%;
+    padding-top: 10px;
+}
+
+#logosize {
+    height:90px;
+    width:500px;
+}
+
+@media only screen and (max-width: 600px) {
+    .topmob {
+        display: block;
+        background-color: #527976;
+    }
+
+    .top {
+        display: none;
+    }
+
+    #logosize {
+        height:60px;
+        width:240px;
+    }
+    
+    footer {
+        height: 35px;
+    }
+    
+    #c2023 {
+        font-size: 10px; 
+    }
+    
+    #copy {
+        font-size: 6px;
+        width: 60%;
+        padding-top: 10px;
+    }
+    
+    #feedback {
+        font-size: 7px; 
+    }
+
+    #headerbuttonsmob {
+        color: #5E3628;
+        background-color: #E6DFCC;
+        border-color: #5E3628;
+        border-radius: 7px;
+        margin-left: 15px;
+    }
+}

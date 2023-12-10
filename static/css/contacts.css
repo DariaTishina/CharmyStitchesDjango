@@ -1,0 +1,54 @@
+.contacts {
+    height: 758px;
+    background-color: #E6DFCC;
+    background-image: url(../svg/body/Администратор.svg), url(../svg/body/Оператор.svg), url(../svg/body/Текст\ в\ облаке.svg), url(../svg/body/Объявление.svg), url(../svg/body/Клубки\ и\ ножницы2.svg);
+    background-repeat:no-repeat, no-repeat, no-repeat, no-repeat, round;
+    background-position: 150px 100px, 150px 400px, 420px 650px, 1350px 150px, 0px;
+    background-size:270px, 270px, 500px, auto, auto;
+    color: #5E3628;
+    text-align: justify;
+    line-height: 30px;
+    max-width: 1980px;
+    margin: auto;
+}
+
+.ContactsText {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.role {
+    font-size: 35px; 
+    padding-top: 70px; 
+    padding-left: 450px;
+}
+
+.othertext {
+    font-size: 25px; 
+    padding-left: 450px;
+}
+
+@media only screen and (max-width: 600px) {
+    .ContactsText {
+        font-size: 25px;
+        padding-top: 4%;
+    }
+    
+    .contacts {
+        background-position: 10px 100px, 10px 400px, 70px 620px, 1350px 150px, 0px;
+        background-size:150px, 150px, 300px, auto, auto;
+    }
+
+    .role {
+        font-size: 20px; 
+        padding-top: 35px; 
+        padding-left: 170px;
+    }
+
+    .othertext {
+        font-size: 14px; 
+        padding-left: 170px;
+        line-height: 27px;
+    }
+}
